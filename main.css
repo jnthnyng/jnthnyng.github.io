@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Helvetica Neue", "Futura PT", "Avenir" , "Avenir Next", sans-serif;
   --nav-load-time: 350ms;
   --nav-link-load-time: 500ms;
   --article--load-delay: calc(var(--nav-load-time) + var
