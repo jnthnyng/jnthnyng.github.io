@@ -22,8 +22,8 @@
             <nav>
                 <ul>
                     <a class="link-send" href=".">
-                        <li><a href="#middle">my work</a></li>
-                        <li><a href="#topmiddle">my skills</a></li>
+                        <li><a href="#middle">works</a></li>
+                        <li><a href="#topmiddle">skills</a></li>
                         <li><a href="#bottom">contact</a></li>
                     </a>
 
@@ -224,7 +224,7 @@
                                     <input type="hidden" class="field" name="_subject" value="New Email">
                                     <input type="email" class="field" name="email" placeholder="email address" required>
                                     <input type="text" class="field" name="name" placeholder="your message here" required>
-                                    <button class="btn" type="submit">send</button>
+                                    <button class="btn" type="submit">go</button>
                                </form> 
                             </div>
                         </div>
