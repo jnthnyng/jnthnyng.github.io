@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", "Helvetica Neue", "Futura PT", "Avenir" , "Avenir Next", sans-serif;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
   --nav-load-time: 350ms;
   --nav-link-load-time: 500ms;
   --article--load-delay: calc(var(--nav-load-time) + var
@@ -13,7 +14,7 @@ html {
 }
 
 .social-icon {
-  color:#000000
+  color:#000000;
 }
 
 ul {
@@ -28,6 +29,13 @@ a {
 
 img {
   width: 100%;
+}
+
+.toplinks:hover {
+
+  color: #000000;
+  transition: .3s ease-in-out;
+
 }
 
 .nav-container {
@@ -99,6 +107,14 @@ header ul a {
   margin-right: 0em;
 }
 
+.point-down {
+
+  font-size: ;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+
+}
+
 section {
   padding: 4em 2em;
   text-align: center;
@@ -143,11 +159,12 @@ nav li:first-child {
 }
 
 .featured-desc {
-  margin-right: 15px;
+  margin-right: 23px;
 }
 
 .skills {
   background: #FF0000;
+  padding-top: -500000px;
 }
 
 .skills-container ul li {
@@ -157,7 +174,6 @@ nav li:first-child {
   margin-bottom: 1em;
 }
 .skills-container ul li .icon-container {
-  height: auto;
   display: grid;
   place-content: center;
   margin: 2em auto;
@@ -193,8 +209,9 @@ nav li:first-child {
 }
 
 .iframe-container{
+  margin: 45px auto;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   padding-bottom: 56.25%; 
   height: 0;
 }
@@ -204,6 +221,21 @@ nav li:first-child {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.video-text {
+
+  background-color: white;
+  padding: 1px 10px 30px 22px;
+  border-radius: 15px;
+
+}
+
+.video-text-head {
+
+  font-weight: bold;
+  font-size: 2em;
+
 }
 
 .portfolio {
@@ -293,19 +325,14 @@ nav li:first-child {
 	max-width: auto;
 	display: contents;
 	grid-template-columns: auto;
-	justify-content: safe;
 	align-items: center;
 	text-align: relative;
-	background-color: rgb(255, 255, 255);
 }
 
-.contact-box-2{
-	max-width: auto;
+.contact-box-2 {
 	display: contents;
 	grid-template-columns: auto;
-	justify-content: safe;
-	align-items: center;
-	text-align: relative;
+  float: none;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -327,7 +354,7 @@ h2:after{
 }
 
 .field{
-	width: 100%;
+	width: 80%;
 	border: 0px solid white;
 	outline: none;
 	background-color: rgba(208, 208, 208, 0.6);
@@ -335,10 +362,17 @@ h2:after{
 	font-size: 1rem;
 	margin-bottom: 22px;
 	transition: .3s;
-  height: 50px;z
+  height: 50px;
+  float: none;
 }
 
-.field:hover{
+.submission-container {
+
+  margin-top: 20px;
+
+}
+
+.field-hover{
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -415,12 +449,12 @@ textarea{
 
 h1 {
   animation: article-load 350ms ease-in ;
-  (--article--load-delay);
+  (--article--load-delay)
 }
 
 p {
   animation: article-load 500ms ease-in ;
-  (--article--load-delay);
+  (--article--load-delay)
 }
 
 @keyframes nav-load {
@@ -461,10 +495,11 @@ p {
   }
 }
 
-p.about-me {
+.about-me {
   margin-left: auto;
   margin-right: auto;
   width: auto;
+  line-height: 24px;
 }
 
 div.contact-box-2 {
@@ -486,5 +521,126 @@ div.contact-box-2 {
   left: 0px;
   padding-top: 18px;
 }
+
+.contact .container {
+  float: middle;
+}
+
+body {
+
+  margin: 1;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.container {
+
+
+
+}
+
+
+.container .image-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+
+.container .image-container .image {
+
+  cursor: auto;
+  overflow: hidden;
+  border-radius: 15px;
+
+}
+
+.container .image-container .image img {
+
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transform: .3s linear;
+   border-radius: 15px;
+
+}
+
+.image-container .image:hover img {
+
+  transform: scale(1.03);
+  transition: .5s;
+  border-radius: 15px;
+
+}
+
+.container .popup-image {
+
+  position: fixed;
+  top: 0; left: 0;
+  background: rgba(33, 33, 33, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+
+}
+
+.container .popup-image span{
+
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: rgb(214, 214, 214);
+  cursor: auto;
+  z-index: 100;
+  border-radius: 15px;
+  border: 50px;
+  padding: 12px 12px 12px 12px;
+
+}
+
+.container .popup-image span:hover {
+
+  color: red;
+  transition: .5s;
+
+}
+
+.container .popup-image img {
+
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  width: 750px;
+  object-fit: cover;
+
+}
+
+
+.x {
+
+  color: red;
+
+}
+
+
+@media (max-width:768px){
+
+  .container .popup-image img {
+
+      width: 95%;
+
+  }
+
+}
+
+
 
 /* MEDIA QUERIES */
