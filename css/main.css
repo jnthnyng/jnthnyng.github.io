@@ -123,7 +123,7 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: black;
+  color: rgb(149, 149, 149);
   letter-spacing: 0.2em;
   font-size: 1em;
 }
@@ -160,6 +160,7 @@ nav li:first-child {
 
 .featured-desc {
   margin-right: 23px;
+  margin-bottom: 25px;
 }
 
 .skills {
@@ -520,6 +521,9 @@ div.contact-box-2 {
   bottom: 0px;
   left: 0px;
   padding-top: 18px;
+  font-size: 80%;
+  font-weight: 10px;
+  letter-spacing: 2px;
 }
 
 .contact .container {
