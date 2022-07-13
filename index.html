@@ -14,7 +14,7 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
-    <h1 id="top"></h1>
+    <script id="top"></script>
 
     <div class="nav-container">
         <header>
@@ -22,9 +22,9 @@
             <nav>
                 <ul>
                     <a class="link-send" href=".">
-                        <li><a href="#middle">works</a></li>
-                        <li><a href="#topmiddle">skills</a></li>
-                        <li><a href="#bottom">contact</a></li>
+                        <li><a href="#middle" class="toplinks">works</a></li>
+                        <li><a href="#topmiddle" class="toplinks">skills</a></li>
+                        <li><a href="#bottom" class="toplinks">contact</a></li>
                     </a>
 
                 </ul>
@@ -42,7 +42,7 @@
             <p>meet jonathan ouyang</p>
         </div>
 
-        <ion-icon name="caret-down-outline"></ion-icon>
+        <ion-icon name="caret-down-outline" class="point-down"></ion-icon>
         
     </div>
 </div>
@@ -50,12 +50,12 @@
 <section class="featured">
     <div class="left">
         <div class="inner transition2">
-            <h1>featured work</h1>
+            <h1>Featured Work</h1>
             <p class="class">Type Designer Exhibit Brochure</p>
             <p class="featured-desc">Created for a gallery event at my UI/UX club, this graphic brochure served as a visual companion to an exhibit centered around the typographer Max Miedinger.</p>
         </div>
     </div>
-    <img style="border-radius:20px;" src="images/mockup.jpg" alt="Featured Project">
+    <div class="image-container"><div class="image"><img style="border-radius:20px;" src="images/mockup.jpg" alt="Featured Project" class="image"></div></div>
 </section>
 
 <section class="skills">
@@ -64,17 +64,17 @@
         <ul>
             <li class="transition2">
                 <div class="icon-container one">
-                    <img src="images/uiux.png" alt="uiux">
+                    <div class="image-container"><div class="image"><img src="images/uiux.png" alt="uiux" class="image"></div></div>
                 </div>
                 <p class="skill-title">UI/UX Design & Development</p>
                 <p class="featured-desc skill-desc">Throughout my career as a designer, I have involved myself in all of design’s many aspects; UI/UX, coding, motion graphics, illustrations, and so on. <br> <br>
 
-                    In fact, I not only designed the composition of this website, I am proud to say that I also programmed it from scratch. 
+                    In fact, I not only designed the composition of this website, I am proud to say that I also programmed it using HTML and CSS. 
                     </p>
             </li> 
             <li class="transition2">
                 <div class="icon-container two">
-                    <img src="images/bulb.png" alt="Good Design Brochure">
+                    <div class="image-container"><div class="image"><img src="images/bulb.png" alt="Good Design Brochure" class="image"></div></div>
                 </div>
                 <p class="skill-title">Creative Production</p>
                 <p class="featured-desc skill-esc">The creativity that I connect with does not end with design. I am also a guitar teacher, music producer, professional photographer/videographer, animator, and more. <br> <br>
@@ -84,7 +84,7 @@
             </li> 
             <li class="transition2">
                 <div class="icon-container three">
-                    <img src="images/heart.png" alt="The Histsory Of Type">
+                    <div class="image-container"><div class="image"><img src="images/heart.png" alt="The Histsory Of Type" class="image"></div></div>
                 </div>
                 <p class="skill-title">Passion & Personability</p>
                 <p class="featured-desc skill-desc">I believe I am able to work diligently due to the passion I find in my craft. I spend much time on my projects because I consider them worth the commitment. <br> <br>
@@ -104,23 +104,24 @@
 
 <section class="videos">
     <div id="middle" class="video-container">
-        <li>
             <div class="iframe-container">
                 <div class="iframe-container">
                     <iframe width="900" height="600" src="https://www.youtube.com/embed/yU7obe6WAas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 </div>
-                <h1 style="font-size:add_size">2D Animation</h1>
-                <p class="skill-title"><b></b></p>
-                <p class="featured-desc skill-desc">For this project, I created an entirely original animation about a Hawaiian Gecko. All the animation, color, paintings, and music are performed and created by me.</p>
-                <br>
+                <div class="video-text">
+                    <p class="video-text-head">2D Animation</p>
+                    <p class="skill-title"><b></b></p>
+                    <p class="featured-desc skill-desc">For this project, I created an entirely original animation about a Hawaiian Gecko. All the animation, color, paintings, and music are performed and created by me.</p>
+                </div>
              <div class="iframe-container">
                 <iframe width="900" height="600" src="https://www.youtube.com/embed/uN6lEIXQz0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div> 
-                <h1 style="font-size:add_size">Guitar Performance</h1>
-                <p class="skill-title"><b><fontsize+"+200"></fontsize></b></p>
-                <p class="featured-desc skill-desc">As an avid musician, creating original songs is one of my favorite things to do. In this video, I took a riff from a popular Youtube guitarist, and added my own writing to make it a full song.</p>
-        </li>
+                <div class="video-text">
+                    <p class="video-text-head">Guitar Performance<p>
+                    <p class="skill-title"><b><fontsize+"+200"></fontsize></b></p>
+                    <p class="featured-desc skill-desc">As an avid musician, creating original songs is one of my favorite things to do. In this video, I took a riff from a popular Youtube guitarist, and added my own writing to make it a full song.</p>
+                </div>
     </div>
 </section>
 
@@ -133,7 +134,7 @@
                 <p class="featured-desc">In the Fall of 2021, I designed a magazine style book displaying the principles of design. My work was one of the few chosen to be displayed later that semester at an annual student showcase.</p>
             </div>
         </div>
-        <a href="javascript:;"><img src="images/gooddesign.jpg" alt="Good Design"></a>
+        <a href="javascript:;"><div class="image-container"><div class="image"><img src="images/gooddesign.jpg" alt="Good Design" class="image"></div></div></a>
     </div>
     <div class="portfolio-container transition3">
         <div class="portfolio-left">
@@ -143,7 +144,7 @@
                 <p class="featured-desc">Throughout my time as a photographer, I have had many increadible opportunities to shoot various events. From graduations to engagements, I have been given the pleasure to be able to capture countless pricesless moments in the lives of clients from all different walks of life.</p>
             </div>
         </div>
-        <a href="javascript:;"><img src="images/wedding.jpg" alt="Wedding Album"></a>
+        <a href="javascript:;"><div class="image-container"><div class="image"><img src="images/wedding.jpg" alt="Wedding Album" class="image"></div></div></a>
     </div>
     <div class="portfolio-container transition3">
         <div class="portfolio-left">
@@ -153,7 +154,7 @@
                 <p class="featured-desc">As one of my Senior projects, I have had to invent unique ways to depict the knowledge I have gained during my studies. For this project, I created a poster graphic that displayed the collective history of typography, elegantly proclaiming of the rich stories behind type.</p>
             </div>
         </div>
-        <a href="javascript:;"><img src="images/typehistory.jpg" alt="History of Type"></a>
+        <a href="javascript:;"><div class="image-container"><div class="image"><img src="images/typehistory.jpg" alt="History of Type" class="image"></div></div></a>
     </div>
     <div class="portfolio-container transition3">
         <div class="portfolio-left">
@@ -163,7 +164,7 @@
                 <p class="featured-desc">In my fine art classes, I have had the privilege to ilustrate, paint, and animate all sorts of different models and subjects. Here are two digital paintings that I am particularly fond of.</p>
             </div>
         </div>
-        <a href="javascript:;"><img src="images/paintings.jpg" alt="Digital Paintings"></a>
+        <a href="javascript:;"><div class="image-container"><div class="image"><img src="images/paintings.jpg" alt="Digital Paintings"></div></div></a>
     </div>
     <div class="portfolio-container transition3">
         <div class="portfolio-left">
@@ -173,19 +174,29 @@
                 <p class="featured-desc">Anyone who knows me is well aware of how often I have my camera with me. I deeply enjoy photographing all sorts of subjects, from landscapes to events, portraiture to architecture, and more!</p>
             </div>
         </div>
-        <a href="javascript:;"><img src="images/collage.jpg" alt="Fretastic"></a>
+        <a href="javascript:;"><div class="image-container"><div class="image"><img src="images/collage.jpg" alt="Fretastic" class="image"></div></div></a>
     </div>
     </div>
 
-
-
-    <section class="personal">
-        <div class="left">
-        </div>
-        <img class="img-personal" src="images/personal.png" alt="Personal Logo">
-    </section>
 <br>
-    <!-- footer -->
+
+<div class="container">
+
+    <div class="image-container">
+
+
+    </div>
+
+    <div class="popup-image">
+
+        <span class="x"><ion-icon name="close-circle-outline"></ion-icon></span>
+        <ion-icon name="close-circle-outline"></ion-icon>
+        <img src="images/" alt="">
+
+    </div>
+
+</div>
+
     <div class="footer">
         <div class="footer-content">
             <h1 id="bottom"></h1>
@@ -206,40 +217,29 @@
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
 
-                    <head>
+                    <div>
                         <title>Contact us</title>
                         <link rel="stylesheet" type="text/css" href="style.css">
                         <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
                         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-                    </head>
-                    <body>
-                        <div class="container">
-                            <div class="contact-box">
-                                <div class="left"></div>
-                                <div class="right">
-                                </div>
-                            </div>
-                            <div class="contact-box-2">
-                                <form action="https://formsubmit.co/jon.j.ouyang@gmail.com" method="POST">
-                                    <input type="hidden" class="field" name="_subject" value="New Email">
-                                    <input type="email" class="field" name="email" placeholder="email address" required>
-                                    <input type="text" class="field" name="name" placeholder="your message" required>
-                                    <button class="btn" type="submit">go</button>
-                               </form> 
-                            </div>
-                        </div>
-                    </body>
+                    </div>
+
+                    <div class="submission-container">
+                        <form action="https://formsubmit.co/jon.j.ouyang@gmail.com" method="POST">
+                            <input type="hidden" class="field" name="_subject" value="New Email">
+                            <input type="email" class="field" name="email" placeholder="email address" required>
+                            <input type="text" class="field" name="name" placeholder="your message" required>
+                            <button class="btn" type="submit">go</button>
+                        </form> 
+                    </div>
 
                     <div class="top-send">
                         <a href="#top"><p style="color:red"></a>
                         </p>
                     </div>
 
-
-
                 </div>
-                <br>
-                <br>
+
         </div>
 
     </div>
@@ -261,8 +261,6 @@
         }
 
     </style>
-    
-    <!-- //  footer -->
 
 
     <div class="footer-bottom">
@@ -270,6 +268,22 @@
     </div>
     
     </section>
+
+    <script>
+
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            
+        };
+    });
+
+    document.querySelector('.popup-image span').onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+
+    </script>
 
 </body>
 
