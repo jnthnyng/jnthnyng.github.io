@@ -227,15 +227,18 @@ nav li:first-child {
 .video-text {
 
   background-color: white;
-  padding: 1px 10px 30px 22px;
+  padding: 5px 10px 1px 30px;
   border-radius: 15px;
 
 }
 
 .video-text-head {
 
+  color: rgb(99, 99, 99);
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.7em;
+  text-align: center;
+  padding-bottom: 10px;
 
 }
 
@@ -523,7 +526,6 @@ div.contact-box-2 {
   padding-top: 18px;
   font-size: 80%;
   font-weight: 10px;
-  letter-spacing: 2px;
 }
 
 .contact .container {
